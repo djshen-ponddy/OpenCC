@@ -23,7 +23,7 @@ PREFIX = /usr
 build:
 	mkdir -p build/rel
 	(cd build/rel; cmake \
-	-DBUILD_DOCUMENTATION:BOOL=ON \
+	-DBUILD_DOCUMENTATION:BOOL=OFF \
 	-DENABLE_GTEST:BOOL=OFF \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DCMAKE_INSTALL_PREFIX=${PREFIX} \
